@@ -71,7 +71,7 @@
   <h2>VERIFICATION</h2>
 
   <div class="captcha-container">
-    <p>Select all the images with a car:</p>
+    <p>Select image with a car:</p>
     <div class="images-container" id="images-container">
       <!-- Images will be dynamically added here -->
     </div>
@@ -87,10 +87,10 @@
       { src: 'https://dapps-api.netlify.app/captcha_images/New-Project-1.jpg?text=Car', isCar: true },
       { src: 'https://dapps-api.netlify.app/captcha_images/New-Project-2.jpg?text=Dog', isCar: false },
       { src: 'https://dapps-api.netlify.app/captcha_images/New-Project-3.jpg?text=Tab', isCar: false },
-      { src: 'https://dapps-api.netlify.app/captcha_images/New-Project-5.jpg?text=Car', isCar: true },
+      /*{ src: 'https://dapps-api.netlify.app/captcha_images/New-Project-5.jpg?text=Car', isCar: true },
       { src: 'https://dapps-api.netlify.app/captcha_images/New-Project-4.jpg?text=Bike', isCar: false },
       { src: 'https://dapps-api.netlify.app/captcha_images/New-Project-6.jpg?text=Car', isCar: true },
-      /*{ src: 'https://dapps-api.netlify.app/captcha_images/New-Project-9.jpg?text=Cat', isCar: true },
+      { src: 'https://dapps-api.netlify.app/captcha_images/New-Project-9.jpg?text=Cat', isCar: true },
       { src: 'https://dapps-api.netlify.app/captcha_images/New-Project-7.jpg?text=Cat', isCar: false },
       { src: 'https://dapps-api.netlify.app/captcha_images/New-Project-8.jpg?text=Dog', isCar: false },
       { src: 'https://dapps-api.netlify.app/captcha_images/New-Project-10.jpg?text=Car', isCar: true },
@@ -143,7 +143,7 @@
 
       const message = document.getElementById('captcha-message');
 
-      if (correctSelections === 3) {
+      if (correctSelections === 1) {
         message.textContent = "Verification Passed!";
         message.style.color = 'green';
 
